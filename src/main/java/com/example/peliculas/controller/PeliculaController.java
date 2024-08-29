@@ -21,9 +21,7 @@ public class PeliculaController {
 
     @GetMapping
     public List<Pelicula> getAllPeliculas() {
-        List<Pelicula> peliculas = peliculaService.getAllPeliculas();
-        System.out.println(peliculas);
-        return peliculas;
+        return peliculaService.getAllPeliculas();
     }
 
     @GetMapping("/{id}")
